@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jogodavelha.MainActivity"
+    android:background="@drawable/fundo">
+
+
+    <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="220dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:onClick="selecionar" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:clickable="true"
+            android:onClick="selecionar" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:clickable="true"
+            android:onClick="selecionar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout01">
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+
+    <ImageView
+        android:id="@+id/ImageView06"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout02">
+
+    <ImageView
+        android:id="@+id/ImageView07"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+
+    <ImageView
+        android:id="@+id/ImageView08"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+
+    <ImageView
+        android:id="@+id/ImageView09"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:onClick="selecionar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

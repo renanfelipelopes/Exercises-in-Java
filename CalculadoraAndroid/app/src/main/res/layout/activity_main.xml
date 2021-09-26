@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculadora.MainActivity">
+
+<TextView
+    android:id="@+id/resultado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:textDirection="rtl"
+    android:textSize="40sp"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<LinearLayout
+    android:id="@+id/linha1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/resultado">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="7"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="8"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="9"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="/"
+        android:textSize="40sp"
+        android:onClick="operacao"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linha2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/linha1">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="4"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="5"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="6"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="*"
+        android:textSize="40sp"
+        android:onClick="operacao"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linha3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/linha2">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="1"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="2"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="3"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/somar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="+"
+        android:textSize="40sp"
+        android:onClick="operacao"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linha4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/linha3">
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:text="0"
+        android:textSize="40sp"
+        android:onClick="adicionarNumero"/>
+
+    <Button
+        android:id="@+id/buttonCE"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="CE"
+        android:textSize="40sp"
+        android:onClick="limpar"/>
+
+    <Button
+        android:id="@+id/subtrair"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="-"
+        android:textSize="40sp"
+        android:onClick="operacao"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linha5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:gravity="center_horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/linha4">
+
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="="
+        android:textSize="40sp"
+        android:onClick="calcular"/>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
